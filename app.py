@@ -25,11 +25,11 @@ def callback():
     while True:
    userText = input('')
     if (userText == 'สวัสดี') :
-        sendText(user'สวัสดีครับ')
+        sendText(user,'สวัสดีครับ')
     elif (userText == 'สบายดีใหม') :
-        sendText(user'สบายดีสบายมากเป็นอย่างเงี้ย')
+        sendText(user,'สบายดีสบายมากเป็นอย่างเงี้ย')
     else :
-        print('บรัยย')
+        sendText(user,'บรัยย')
     return '',200
 
 def sendText(user, text):
