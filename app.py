@@ -22,8 +22,6 @@ def callback():
     decoded = json.loads(json_line)
     user = decoded["events"][0]['replyToken']
     userText = decoded["events"][0]['message']['text']
-    while True:
-   userText = input('')
     if (userText == 'สวัสดี') :
         sendText(user,'สวัสดีครับ')
     elif (userText == 'สบายดีใหม') :
